@@ -150,8 +150,8 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
+  height: auto;
+  margin: 10rem 10rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -174,6 +174,9 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+.section__pic-container img{
+  border-radius: 100%;
 }
 
 .section__text {
@@ -205,6 +208,10 @@ section {
   margin-top: 1rem;
   gap: 1rem;
 }
+#socials-container i{
+  cursor: pointer;
+  font-size: 2.5rem;
+}
 
 /* ICONS */
 
@@ -222,11 +229,14 @@ section {
 }
 
 .btn {
-  font-weight: 600;
-  transition: all 300ms ease;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 100ms ease;
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  border: 2px black solid;
+  font-size: 0.94rem;
 }
 
 .btn-color-1,
@@ -267,6 +277,16 @@ section {
   position: relative;
 }
 
+.education{
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.education i, h3{
+  font-size: 2rem;
+}
+
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
@@ -277,7 +297,11 @@ section {
   justify-content: center;
   flex-direction: column;
 }
+.about-details-container span:nth-child(1){
+  font-weight: 800;
+}
 
+.education,
 .about-containers,
 .about-details-container {
   display: flex;
@@ -289,8 +313,11 @@ section {
 
 .arrow {
   position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+  right: 0;
+  bottom: -2rem;
+}
+.arrow i{
+  font-size: 2rem;
 }
 
 .details-container {
@@ -303,9 +330,15 @@ section {
   text-align: center;
 }
 
+.text-container p{
+  text-align: justify;
+  font-size: 1.3rem;
+}
+
 .section-container {
   gap: 4rem;
   height: 80%;
+  margin-top: 2rem;
 }
 
 .section__pic-container {
@@ -316,18 +349,18 @@ section {
 
 /* EXPERIENCE SECTION */
 
-#experience {
+#skill {
   position: relative;
 }
 
-.experience-sub-title {
+.skill-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
-.experience-details-container {
+.skill-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -345,8 +378,9 @@ section {
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+  justify-content: space-evenly;
   gap: 0.5rem;
+  align-items: center;
 }
 
 article .icon {
@@ -357,6 +391,7 @@ article .icon {
 
 #projects {
   position: relative;
+  height: auto;
 }
 
 .color-container {
@@ -368,6 +403,7 @@ article .icon {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
+  aspect-ratio: 1/1;
 }
 
 .project-title {
@@ -407,7 +443,9 @@ article .icon {
   gap: 0.5rem;
   margin: 1rem;
 }
-
+.contact-info-container i{
+  font-size: 2rem;
+}
 .contact-info-container p {
   font-size: larger;
 }
